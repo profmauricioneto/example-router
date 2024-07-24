@@ -1,0 +1,23 @@
+
+image: gitpod/workspace-full
+
+tasks:
+  - name: install Dependencies
+    init: |
+      npm install
+    command: |
+      npm start
+
+# List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
+ports:
+  - name: Sever
+    port: 3000
+    onOpen: ignore
+
+
+
+vscode:
+  extensions:
+    - rangav.vscode-thunder-client
+    - christian-kohler.path-intellisense
+    - xabikos.JavaScriptSnippets
